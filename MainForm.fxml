@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="topPane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dan.MainFormController">
+   <children>
+      <Button fx:id="backButton" alignment="CENTER" layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBackAction" stylesheets="@style.css" text="&lt;" />
+      <Button fx:id="forwardButton" alignment="CENTER" layoutX="45.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleForwardAction" stylesheets="@style.css" text="&gt;" />
+      <TextField fx:id="textField" layoutX="121.0" layoutY="14.0" onAction="#handleURLAction" prefHeight="25.0" prefWidth="426.0" promptText="Enter Web URL" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="53.0" />
+      <ProgressBar fx:id="pb" layoutX="121.0" layoutY="16.0" prefHeight="22.0" prefWidth="426.0" progress="0.0" stylesheets="@style.css" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="53.0" />
+      <Button fx:id="GoButton" alignment="CENTER" layoutX="554.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleGo" text="Go" AnchorPane.rightAnchor="14.0" />
+      <WebView fx:id="mainWebView" layoutX="7.0" layoutY="50.0" opacity="0.5" prefHeight="350.0" prefWidth="600.0" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+      <Button fx:id="refreshButton" alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleRefresh" prefHeight="25.0" prefWidth="32.0" />
+   </children>
+</AnchorPane>

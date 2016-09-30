@@ -1,0 +1,21 @@
+#topPane {
+	-fx-background-image: url("images/florist.jpg");
+	-fx-background-size: cover;
+	-fx-background-repeat: stretch;
+	-fx-background-position: center center;
+	
+}
+
+.mainWeb  {
+	-fx-opacity: 1.0;
+	
+}
+
+.progressbar {
+	
+	-fx-accent: green;
+	-fx-box-border: cornsilk;
+	-fx-opacity: 0.6;
+
+}
+
